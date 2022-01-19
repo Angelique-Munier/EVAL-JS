@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+       
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <title>Jeux de dés JS</title>
+    </head>
+
+    <body>
+        <div class="global">
+
+            <div class="joueur-0-panel active">
+                <div class="joueur-nom" id="nom-0">Joueur 1</div>
+                <div class="joueur-score" id="score-0">0</div>
+                <div class="joueur-current-box">
+                    <div class="joueur-current-label">Score</div>
+                    <div class="joueur-current-score" id="current-0">0</div>
+                </div>
+            </div>
+            
+            <div class="joueur-1-panel">
+                <div class="joueur-nom" id="nom-1">Joueur 2</div>
+                <div class="joueur-score" id="score-1">0</div>
+                <div class="joueur-current-box">
+                    <div class="joueur-current-label">Score</div>
+                    <div class="joueur-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-nouveau"><i class="ion-ios-game-controller-a"></i>Nouvelle Partie</button>
+            <button class="btn-lancer"><i class="ion-ios-infinite">Lancer les dés</button>
+            <button class="btn-retenir"><i class="ion-ios-cloud-download"></i>Retenir</button>
+            
+            <img src="de-4.png" alt="Dés" class="de">
+        </div>
+        
+        <script src="jeu.js"></script>
+    </body>
+</html>
