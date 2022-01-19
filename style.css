@@ -1,0 +1,135 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+body {
+    position: relative;
+    height: 100vh;
+    color: #555;
+    background-image: url(img.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: arial;
+   
+}
+
+.global {
+    width: 1100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(243, 239, 239);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.joueur-0-panel,
+.joueur-1-panel {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}
+
+
+
+
+.joueur-nom {
+    
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.joueur-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #1da0a5;
+    margin-bottom: 130px;
+}
+
+.active { background-color: #f7f7f7; }
+.active .joueur-name { font-weight: 300; }
+
+.active .joueur-nom::after {
+    content: "\2605";
+    font-size: 47px;
+    position: absolute;
+    color: #a51d28;
+    top: -15px;
+    right: -10px;
+    
+}
+
+.joueur-current-box {
+    background-color: #1da0a5;
+    color: rgb(68, 66, 66);
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.joueur-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #222;
+}
+
+.joueur-current-score {
+    font-size: 40px;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    
+}
+
+
+
+
+
+.btn-nouveau { top: 45px;}
+.btn-lancer { top: 403px;}
+.btn-retenir { top: 467px;}
+
+.de {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+.gagnant { background-color: #f7f7f7; }
+.gangant .joueur-name { font-weight: 300; color: #EB4D4D; }
+
+
